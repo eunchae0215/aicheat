@@ -1,0 +1,23 @@
+text = '''RAG (retrieval augmented generation) is an advanced NLP model that combines retrieval mechanisms with generative capabilities. RAG aims to improve the accuracy and relevance of its outputs by grounding responses in precise, contextually appropriate data.'''
+
+# Define a text splitter that splits on the '.' character
+text_splitter = ____(
+    ____,
+    ____,  
+    ____  
+)
+
+# Split the text using text_splitter
+chunks = text_splitter.____
+print(chunks)
+print([len(chunk) for chunk in chunks])
+
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+
+embedding_model = OpenAIEmbeddings(api_key="<OPENAI_API_TOKEN>", model="text-embedding-3-small")
+
+# Create a Chroma vector store and embed the chunks
+vector_store = Chroma.from_documents(chunks, embedding_model)
+
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+
